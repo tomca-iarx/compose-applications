@@ -7,5 +7,7 @@ services:
     volumes:
       - ./data:/var/opt/mssql/data
     environment:
-      SA_PASSWORD: tomcain1!
       ACCEPT_EULA: Y
+      MSSQL_SA_PASSWORD: tomcain1!
+      MSSQL_AGENT_ENABLED: true
+      
